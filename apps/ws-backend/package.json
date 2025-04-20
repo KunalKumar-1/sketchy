@@ -9,7 +9,8 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/ws": "^8.18.0"
+    "@types/ws": "^8.18.0",
+    "@repo/shared-backend": "workspace:*"
   },
   "keywords": [],
   "author": "",

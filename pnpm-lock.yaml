@@ -30,6 +30,9 @@ importers:
         specifier: ^9.0.2
         version: 9.0.2
     devDependencies:
+      '@repo/shared-backend':
+        specifier: workspace:*
+        version: link:../../packages/shared-backend
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
@@ -86,6 +89,9 @@ importers:
         specifier: ^8.18.1
         version: 8.18.1
     devDependencies:
+      '@repo/shared-backend':
+        specifier: workspace:*
+        version: link:../../packages/shared-backend
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
