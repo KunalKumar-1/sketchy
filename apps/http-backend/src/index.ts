@@ -31,7 +31,7 @@ app.post("/signin", (req, res) => {
         })
         return;
     }
-
+    //db call
     const userId = 1;
     const token = jwt.sign({
         userId
@@ -44,7 +44,15 @@ app.post("/signin", (req, res) => {
 })
 
 app.post("/room", middleware, (req, res) => {
-//db call
+
+    const parseData = CreateRoomSchema.safeParse(req.body);
+    if(!parseData.success) {
+        res.status(400).json({
+            message: "Invalid inputs"
+        })
+        return;
+    }
+    //db call
     res.json({
         roomId: 123
     })
